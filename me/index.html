@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>导航</title>
+        <style>
+            .nav {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .item {
+                margin: auto;
+                text-align: center;
+                padding: 10px;
+                font-size: 1em;
+            }
+            .itemicon {
+                width: 32px;
+            }
+            .itemlink {
+                text-decoration: none;
+                text-decoration-color: black;
+            }
+            .itemlink:visited, .itemlink:link{
+                color: black;
+                text-decoration-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav"></div>
+        <script type="text/javascript" src="links.js"></script>
+
+        <script type="text/javascript">
+
+            function createIcon(nav) {
+                let icon = new Image();
+                icon.src = nav.icon;
+                icon.className = 'itemicon';
+                return icon;
+            }
+
+            function createText(nav) {
+                let node = document.createElement("div");
+                node.className = 'itemtext';
+                node.innerText = nav.text;
+                return node;
+            }
+
+            function createLink(nav) {
+                let node = document.createElement("a");
+                node.href = nav.url;
+                node.className = 'itemlink';
+                node.appendChild(createIcon(nav));
+                node.appendChild(createText(nav));
+                return node;
+            }
+
+            function navToNode(nav) {
+                let item =  document.createElement("div");
+                item.className = 'item'
+                item.appendChild(createLink(nav));
+                return item;
+            }
+
+            function buildNav() {
+                let container = document.getElementsByClassName("nav").item(0);
+                if (container) {
+                    navs.map(navToNode)
+                        .forEach((node) => container.appendChild(node))
+                        ;
+                }
+                
+            }
+            document.addEventListener("DOMContentLoaded", (e) => buildNav() ); 
+        </script>
+    </body>
+</html>

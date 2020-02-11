@@ -1,0 +1,15 @@
+[
+    { "text": "抽屉", "url": "https://m.chouti.com/all/hot"},
+    { "text": "百度", "url": "https://www.baidu.com"},
+    { "text": "StackOverflow", "url": "https://stackoverflow.com/", "proxy": true},
+    { "text": "OSChina", "url": "https://m.oschina.net"},
+    { "text": "CnBeta", "url": "https://m.cnbeta.com"},
+    { "text": "优书网", "url": "https://www.yousuu.com"},
+    { "text": "IT之家", "url": "https://m.ithome.com"},
+    { "text": "果壳", "url": "https://m.guokr.com"},
+    { "text": "太平洋电脑", "url": "https://g.pconline.com.cn"},
+    { "text": "Chiphell", "url": "https://www.chiphell.com/forum.php?mod=forumdisplay&fid=297&page=1&mobile=2"},
+    { "text": "涨姿势", "url": "https://www.zhangzishi.cc"},
+    { "text": "爱范儿", "url": "https://www.ifanr.com"},
+    { "text": "少数派", "url": "https://www.sspai.com"}
+]
