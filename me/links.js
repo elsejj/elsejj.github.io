@@ -8,7 +8,7 @@ let navs =
   {
     "text": "百度",
     "url": "https://www.baidu.com",
-    "icon": "https://www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg"
+    "icon": "https://sm.bdimg.com/static/wiseindex/img/screen_icon_new.png"
   },
   {
     "text": "StackOverflow",
@@ -49,7 +49,7 @@ let navs =
   {
     "text": "Chiphell",
     "url": "https://www.chiphell.com/forum.php?mod=forumdisplay&fid=297&page=1&mobile=2",
-    "icon": "https://www.chiphell.com/favicon-194x194.png"
+    "icon": "https://www.chiphell.com/favicon.ico"
   },
   {
     "text": "涨姿势",
@@ -59,7 +59,7 @@ let navs =
   {
     "text": "爱范儿",
     "url": "https://www.ifanr.com",
-    "icon": "https://images.ifanr.cn/wp-content/themes/ifanr-5.0-pc/static/images/favicon.ico"
+    "icon": "https://images.ifanr.cn/wp-content/themes/ifanr-5.1-mobile/static/images/mobile/apple-bookmark/ifanr_180px.png"
   },
   {
     "text": "少数派",

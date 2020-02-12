@@ -45,7 +45,7 @@ def load():
         return json.load(fp)
 
 def icon_url(url, use_proxy):
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 Edg/80.0.361.48'}
+    headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; EVR-AL00 Build/HUAWEIEVR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36'}
     proxy = {"https": "https://127.0.0.1:1080"}
     resp = requests.get(url, headers=headers, proxies = proxy if use_proxy else None)
     parser = IconParser()
