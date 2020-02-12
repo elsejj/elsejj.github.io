@@ -1,7 +1,7 @@
 [
     { "text": "抽屉", "url": "https://m.chouti.com/all/hot"},
     { "text": "百度", "url": "https://www.baidu.com"},
-    { "text": "StackOverflow", "url": "https://stackoverflow.com/", "proxy": true},
+    { "text": "StackOverflow", "url": "https://stackoverflow.com/questions", "proxy": true},
     { "text": "OSChina", "url": "https://m.oschina.net"},
     { "text": "CnBeta", "url": "https://m.cnbeta.com"},
     { "text": "优书网", "url": "https://www.yousuu.com"},
@@ -11,5 +11,7 @@
     { "text": "Chiphell", "url": "https://www.chiphell.com/forum.php?mod=forumdisplay&fid=297&page=1&mobile=2"},
     { "text": "涨姿势", "url": "https://www.zhangzishi.cc"},
     { "text": "爱范儿", "url": "https://www.ifanr.com"},
-    { "text": "少数派", "url": "https://www.sspai.com"}
+    { "text": "少数派", "url": "https://www.sspai.com"},
+    { "text": "NBCheck", "url": "https://www.notebookcheck.net", "proxy": true},
+    { "text": "SaltTiger", "url":"https://salttiger.com/", "proxy":true}
 ]

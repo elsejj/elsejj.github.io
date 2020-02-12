@@ -8,13 +8,13 @@ let navs =
   {
     "text": "百度",
     "url": "https://www.baidu.com",
-    "icon": "https://www.baidu.com/favicon.ico"
+    "icon": "https://www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg"
   },
   {
     "text": "StackOverflow",
-    "url": "https://stackoverflow.com/",
+    "url": "https://stackoverflow.com/questions",
     "proxy": true,
-    "icon": "https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d"
+    "icon": "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
   },
   {
     "text": "OSChina",
@@ -24,12 +24,12 @@ let navs =
   {
     "text": "CnBeta",
     "url": "https://m.cnbeta.com",
-    "icon": "https://m.cnbeta.com/favicon.ico"
+    "icon": "https://static.cnbetacdn.com/images/logo.png"
   },
   {
     "text": "优书网",
     "url": "https://www.yousuu.com",
-    "icon": "https://www.yousuu.com/favicon.ico"
+    "icon": "https://www.yousuu.com/favicon.png"
   },
   {
     "text": "IT之家",
@@ -44,12 +44,12 @@ let navs =
   {
     "text": "太平洋电脑",
     "url": "https://g.pconline.com.cn",
-    "icon": "https://g.pconline.com.cn/favicon.ico"
+    "icon": "https://www1.pconline.com.cn/wap/2013/cms/img/logo.png"
   },
   {
     "text": "Chiphell",
     "url": "https://www.chiphell.com/forum.php?mod=forumdisplay&fid=297&page=1&mobile=2",
-    "icon": "https://www.chiphell.com/favicon.ico"
+    "icon": "https://www.chiphell.com/favicon-194x194.png"
   },
   {
     "text": "涨姿势",
@@ -65,6 +65,18 @@ let navs =
     "text": "少数派",
     "url": "https://www.sspai.com",
     "icon": "https://cdn.sspai.com/sspai/assets/img/favicon/icon.ico"
+  },
+  {
+    "text": "NBCheck",
+    "url": "https://www.notebookcheck.net",
+    "proxy": true,
+    "icon": "https://www.notebookcheck.net/fileadmin/templates/nbc_v4_4/images/favicon.ico"
+  },
+  {
+    "text": "SaltTiger",
+    "url": "https://salttiger.com/",
+    "proxy": true,
+    "icon": "https://salttiger.com/favicon.ico"
   }
 ]
 ;
