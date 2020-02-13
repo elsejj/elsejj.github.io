@@ -2,6 +2,7 @@ import requests
 import json
 from html.parser import HTMLParser
 from urllib.parse import urlparse
+from base64 import b64encode
 
 
 
@@ -19,7 +20,7 @@ class IconParser(HTMLParser):
             rel, href = kv.get('rel', ''), kv.get('href', '')
             if rel.find('icon') >= 0:
                 size = self.parse_size(kv.get('sizes'))
-                if size >= self._size:
+                if size >= self._size and size <= 64:
                     self._icon = href
                     self._size = size
 
@@ -44,10 +45,12 @@ def load():
     with open('fav.json') as fp:
         return json.load(fp)
 
+
+req_headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 Edg/80.0.361.50'}
+req_proxy = {"https": "https://127.0.0.1:1080"}
+
 def icon_url(url, use_proxy):
-    headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; EVR-AL00 Build/HUAWEIEVR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36'}
-    proxy = {"https": "https://127.0.0.1:1080"}
-    resp = requests.get(url, headers=headers, proxies = proxy if use_proxy else None)
+    resp = requests.get(url, headers=req_headers, proxies = req_proxy if use_proxy else None)
     parser = IconParser()
     parser.feed(resp.text)
 
@@ -62,6 +65,21 @@ def icon_url(url, use_proxy):
         else:
             return f'{u.scheme}://{u.netloc}{parser.icon}'
 
+def icon_data(url, use_proxy=False):
+    resp = requests.get(url, headers=req_headers, proxies = req_proxy if use_proxy else None)
+    exts = ['ico', 'png', 'jpg', 'jpeg', 'gif', 'svg']
+    mimemap = {
+        'svg': 'image/svg+xml'
+    }
+    mime = 'image/ico'
+    for ext in exts:
+        if url.find(ext) > 0:
+            mime =  f'image/{ext}' if ext not in mimemap else mimemap[ext]
+    data = b64encode(resp.content).decode('utf-8')
+    return f'data:{mime};base64,{data}'
+
+
+
 
 def build(navs):
     for nav in navs:
@@ -71,6 +89,7 @@ def build(navs):
         if url.startswith('http'):
             icon = icon_url(url, proxy == True)
             nav['icon'] = icon
+            nav['icondata'] = icon_data(icon)
         print(icon)
     return navs
 

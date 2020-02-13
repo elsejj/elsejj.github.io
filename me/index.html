@@ -40,6 +40,11 @@
                 let icon = new Image();
                 icon.src = nav.icon;
                 icon.className = 'itemicon';
+
+                if ('icondata' in nav) {
+                    icon.src = nav.icondata;
+                }
+                
                 return icon;
             }
 
