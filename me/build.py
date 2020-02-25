@@ -4,8 +4,6 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse
 from base64 import b64encode
 
-
-
 class IconParser(HTMLParser):
 
 
@@ -42,12 +40,13 @@ class IconParser(HTMLParser):
 
 
 def load():
-    with open('fav.json') as fp:
+    with open('fav.json', encoding="utf-8") as fp:
         return json.load(fp)
 
 
 req_headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 Edg/80.0.361.50'}
 req_proxy = {"https": "https://127.0.0.1:1080"}
+
 
 def icon_url(url, use_proxy):
     resp = requests.get(url, headers=req_headers, proxies = req_proxy if use_proxy else None)
@@ -73,12 +72,10 @@ def icon_data(url, use_proxy=False):
     }
     mime = 'image/ico'
     for ext in exts:
-        if url.find(ext) > 0:
+        if url.find(f'.{ext}') > 0:
             mime =  f'image/{ext}' if ext not in mimemap else mimemap[ext]
     data = b64encode(resp.content).decode('utf-8')
     return f'data:{mime};base64,{data}'
-
-
 
 
 def build(navs):
@@ -103,5 +100,3 @@ def write_js(navs, filename='links.js'):
 if __name__ == "__main__":
     d = build(load())
     write_js(d)
-    #u = icon_url('https://www.chiphell.com/forum.php?mod=forumdisplay&fid=297&page=1&mobile=2', False)
-    #print(u)

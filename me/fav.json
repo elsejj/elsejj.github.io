@@ -1,8 +1,9 @@
 [
     { "text": "抽屉", "url": "https://m.chouti.com/all/hot"},
-    { "text": "百度", "url": "https://www.baidu.com"},
+    { "text": "煎蛋", "url": "https://jandan.net"},
     { "text": "StackOverflow", "url": "https://stackoverflow.com/questions", "proxy": true},
     { "text": "OSChina", "url": "https://m.oschina.net"},
+    { "text": "LinuxIDC", "url": "https://m.linuxidc.com/"},
     { "text": "CnBeta", "url": "https://m.cnbeta.com"},
     { "text": "优书网", "url": "https://www.yousuu.com"},
     { "text": "IT之家", "url": "https://m.ithome.com"},
@@ -13,5 +14,6 @@
     { "text": "爱范儿", "url": "https://www.ifanr.com"},
     { "text": "少数派", "url": "https://www.sspai.com"},
     { "text": "NBCheck", "url": "https://www.notebookcheck.net", "proxy": true},
+    { "text": "SegmentFault", "url": "https://segmentfault.com/"},
     { "text": "SaltTiger", "url":"https://salttiger.com/", "proxy":true}
 ]
