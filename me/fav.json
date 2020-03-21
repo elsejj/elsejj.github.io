@@ -15,5 +15,6 @@
     { "text": "少数派", "url": "https://www.sspai.com"},
     { "text": "NBCheck", "url": "https://www.notebookcheck.net", "proxy": true},
     { "text": "SegmentFault", "url": "https://segmentfault.com/"},
-    { "text": "SaltTiger", "url":"https://salttiger.com/", "proxy":true}
+    { "text": "SaltTiger", "url":"https://salttiger.com/", "proxy":true},
+    { "text": "HackNews", "url":"https://news.ycombinator.com/", "proxy":true}
 ]

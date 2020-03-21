@@ -19,7 +19,10 @@ class IconParser(HTMLParser):
             if rel.find('icon') >= 0:
                 size = self.parse_size(kv.get('sizes'))
                 if size >= self._size and size <= 64:
-                    self._icon = href
+                    if href.startswith('/'):
+                        self._icon = href
+                    else:
+                        self._icon = '/' + href
                     self._size = size
 
     def parse_size(self, size):
@@ -65,6 +68,7 @@ def icon_url(url, use_proxy):
             return f'{u.scheme}://{u.netloc}{parser.icon}'
 
 def icon_data(url, use_proxy=False):
+    print("get icon", url, use_proxy)
     resp = requests.get(url, headers=req_headers, proxies = req_proxy if use_proxy else None)
     exts = ['ico', 'png', 'jpg', 'jpeg', 'gif', 'svg']
     mimemap = {
@@ -86,7 +90,7 @@ def build(navs):
         if url.startswith('http'):
             icon = icon_url(url, proxy == True)
             nav['icon'] = icon
-            nav['icondata'] = icon_data(icon)
+            nav['icondata'] = icon_data(icon, proxy == True)
         print(icon)
     return navs
 
