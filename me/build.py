@@ -19,7 +19,7 @@ class IconParser(HTMLParser):
             if rel.find('icon') >= 0:
                 size = self.parse_size(kv.get('sizes'))
                 if size >= self._size and size <= 64:
-                    if href.startswith('/'):
+                    if href.startswith('/') or href.startswith('http'):
                         self._icon = href
                     else:
                         self._icon = '/' + href
@@ -57,6 +57,7 @@ def icon_url(url, use_proxy):
     parser.feed(resp.text)
 
     u = urlparse(url)
+    print("icon url", url, parser.icon)
     if len(parser.icon) == 0:
         return f'{u.scheme}://{u.netloc}/favicon.ico'
     else:
@@ -85,13 +86,13 @@ def icon_data(url, use_proxy=False):
 def build(navs):
     for nav in navs:
         text, url = nav['text'], nav['url']
-        print(url, end=' ')
+        #print(url, end=' ')
         proxy = 'proxy' in nav
         if url.startswith('http'):
             icon = icon_url(url, proxy == True)
             nav['icon'] = icon
             nav['icondata'] = icon_data(icon, proxy == True)
-        print(icon)
+        #print(icon)
     return navs
 
 def write_js(navs, filename='links.js'):
