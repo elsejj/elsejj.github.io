@@ -16,5 +16,6 @@
     { "text": "NBCheck", "url": "https://www.notebookcheck.net", "proxy": true},
     { "text": "SegmentFault", "url": "https://segmentfault.com/"},
     { "text": "SaltTiger", "url":"https://salttiger.com/", "proxy":true},
-    { "text": "HackNews", "url":"https://news.ycombinator.com/", "proxy":true}
+    { "text": "HackNews", "url":"https://news.ycombinator.com/", "proxy":true},
+    { "text": "InfoQ", "url":"https://infoq.cn", "proxy":true}
 ]
