@@ -48,7 +48,7 @@ def load():
 
 
 req_headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 Edg/80.0.361.50'}
-req_proxy = {"https": "https://127.0.0.1:1080"}
+req_proxy = {"https": "http://127.0.0.1:10809"}
 
 
 def icon_url(url, use_proxy):
