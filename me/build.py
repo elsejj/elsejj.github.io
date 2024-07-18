@@ -1,8 +1,10 @@
-import requests
 import json
+from base64 import b64encode
 from html.parser import HTMLParser
 from urllib.parse import urlparse
-from base64 import b64encode
+
+import requests
+
 
 class IconParser(HTMLParser):
 
