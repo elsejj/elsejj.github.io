@@ -241,6 +241,15 @@
     "unit": "K",
     "currency":"CNY",
     "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
+  },
+  {
+    "provider": "xai",
+    "model": "grok-beta",
+    "input": 5,
+    "output": 15,
+    "unit": "M",
+    "currency":"USD",
+    "url": "https://console.x.ai/"
   }
   
   
