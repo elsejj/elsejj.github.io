@@ -99,6 +99,33 @@
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
   },
   {
+    "provider": "qwen",
+    "model": "qwen-vl-max",
+    "input": 0.02,
+    "output": 0.02,
+    "unit": "K",
+    "currency":"CNY",
+    "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
+  },
+  {
+    "provider": "qwen",
+    "model": "qwen-vl-plus",
+    "input": 0.008,
+    "output": 0.008,
+    "unit": "K",
+    "currency":"CNY",
+    "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
+  },
+  {
+    "provider": "qwen",
+    "model": "qwen-coder-plus",
+    "input": 0.0035,
+    "output": 0.007,
+    "unit": "K",
+    "currency":"CNY",
+    "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
+  },
+  {
     "provider": "zhipu",
     "model": "glm-4-plus",
     "input": 0.05,
