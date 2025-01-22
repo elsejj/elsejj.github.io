@@ -3,7 +3,7 @@
     { "text": "OSChina", "url": "https://m.oschina.net"},
     { "text": "RustCC", "url": "https://rustcc.cn"},
     { "text": "CnBeta", "url": "https://m.cnbeta.com.tw", "proxy":true},
-    { "text": "优书网", "url": "https://www.yousuu.com"},
+    { "text": "LinuxDo", "url" : "https://linux.do/"},
     { "text": "IT之家", "url": "https://m.ithome.com"},
     { "text": "快科技", "url": "https://m.mydrivers.com"},
     { "text": "果壳", "url": "https://m.guokr.com"},
