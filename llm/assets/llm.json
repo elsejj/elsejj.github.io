@@ -109,15 +109,6 @@
   },
   {
     "provider": "vertex-ai",
-    "model": "gemini-1.5-flash",
-    "input": 0.075,
-    "output": 0.3,
-    "unit": "M",
-    "currency":"USD",
-    "url": "https://ai.google.dev/pricing"
-  },
-  {
-    "provider": "vertex-ai",
     "model": "gemini-1.5-pro",
     "input": 1.25,
     "output": 5,
