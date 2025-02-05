@@ -115,12 +115,14 @@ function buildData() : LlmItem[] {
 
 function highlightModel(cell: CellComponent ): string {
   const value = cell.getValue();
-  if (value.includes('gpt')) {
+  if (['gpt', 'o1', 'o3'].includes(value)) {
     return `<span style="color:blue; font-weight:bold;">${value}</span>`;
   } else if (value.includes('gemini')){
     return `<span style="color:green; font-weight:bold;">${value}</span>`;
   } else if (['haiku', 'sonnet', 'opus'].includes(value)){
     return `<span style="color:purple; font-weight:bold;">${value}</span>`;
+  } else if (['deepseek'].includes(value)){
+    return `<span style="color:lightcoral; font-weight:bold;">${value}</span>`;
   }
   else{
     return value;
