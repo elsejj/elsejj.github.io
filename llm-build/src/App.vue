@@ -113,15 +113,21 @@ function buildData() : LlmItem[] {
   }) as LlmItem[]
 }
 
+
 function highlightModel(cell: CellComponent ): string {
+
+  const includeAny = (value: string, keywords: string[]) => {
+    return keywords.some(keyword => value.includes(keyword));
+  }
+
   const value = cell.getValue();
-  if (['gpt', 'o1', 'o3'].includes(value)) {
+  if (includeAny(value, ['gpt', 'o1', 'o3'])) {
     return `<span style="color:blue; font-weight:bold;">${value}</span>`;
   } else if (value.includes('gemini')){
     return `<span style="color:green; font-weight:bold;">${value}</span>`;
-  } else if (['haiku', 'sonnet', 'opus'].includes(value)){
+  } else if (includeAny(value, ['haiku', 'sonnet', 'opus'])){
     return `<span style="color:purple; font-weight:bold;">${value}</span>`;
-  } else if (['deepseek'].includes(value)){
+  } else if (includeAny(value, ['deepseek'])){
     return `<span style="color:lightcoral; font-weight:bold;">${value}</span>`;
   }
   else{
