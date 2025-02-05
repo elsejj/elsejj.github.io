@@ -1,21 +1,39 @@
 [
   {
-    "provider": "azure-openai",
+    "provider": "openai",
     "model": "gpt-4o-mini",
     "input": 0.15,
     "output": 0.6,
     "unit": "M",
     "currency":"USD",
-    "url": "https://azure.microsoft.com/zh-cn/pricing/details/cognitive-services/openai-service/"
+    "url": "https://openai.com/api/pricing/"
   },
   {
-    "provider": "azure-openai",
+    "provider": "openai",
     "model": "gpt-4o",
     "input": 2.5,
     "output": 10,
     "unit": "M",
     "currency":"USD",
-    "url": "https://azure.microsoft.com/zh-cn/pricing/details/cognitive-services/openai-service/"
+    "url": "https://openai.com/api/pricing/"
+  },
+  {
+    "provider": "openai",
+    "model": "o1",
+    "input": 15,
+    "output": 60,
+    "unit": "M",
+    "currency":"USD",
+    "url": "https://openai.com/api/pricing/"
+  },
+  {
+    "provider": "openai",
+    "model": "o3-mini",
+    "input": 1.1,
+    "output": 4.4,
+    "unit": "M",
+    "currency":"USD",
+    "url": "https://openai.com/api/pricing/"
   },
   {
     "provider": "bedrock",
@@ -56,11 +74,38 @@
   {
     "provider": "bedrock",
     "model": "anthropic.claude-3-5-haiku-20241022-v1:0",
-    "input": 	1,
-    "output": 5,
-    "unit": "M",
+    "input": 	0.0008,
+    "output": 0.004,
+    "unit": "K",
     "currency":"USD",
     "url": "https://aws.amazon.com/cn/bedrock/pricing/"
+  },
+  {
+    "provider": "vertex-ai",
+    "model": "gemini-2.0-flash",
+    "input": 0.1,
+    "output": 0.4,
+    "unit": "M",
+    "currency":"USD",
+    "url": "https://ai.google.dev/pricing"
+  },
+  {
+    "provider": "vertex-ai",
+    "model": "gemini-2.0-flash-lite",
+    "input": 0.075,
+    "output": 0.3,
+    "unit": "M",
+    "currency":"USD",
+    "url": "https://ai.google.dev/pricing"
+  },
+  {
+    "provider": "vertex-ai",
+    "model": "gemini-1.5-flash",
+    "input": 0.075,
+    "output": 0.3,
+    "unit": "M",
+    "currency":"USD",
+    "url": "https://ai.google.dev/pricing"
   },
   {
     "provider": "vertex-ai",
