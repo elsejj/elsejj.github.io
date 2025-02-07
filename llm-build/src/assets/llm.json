@@ -119,8 +119,8 @@
   {
     "provider": "qwen",
     "model": "qwen-max",
-    "input": 0.02,
-    "output": 0.06,
+    "input": 0.0024,
+    "output": 0.0096,
     "unit": "K",
     "currency":"CNY",
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
