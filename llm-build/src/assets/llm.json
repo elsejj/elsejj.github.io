@@ -200,8 +200,8 @@
   {
     "provider": "deepseek",
     "model": "deepseek-chat",
-    "input": 1,
-    "output": 2,
+    "input": 2,
+    "output": 8,
     "unit": "M",
     "currency":"CNY",
     "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
@@ -244,7 +244,7 @@
   },
   {
     "provider": "doubao",
-    "model": "Doubao-lite-32k",
+    "model": "doubao-lite-32k",
     "input": 0.0003,
     "output": 0.0006,
     "unit": "K",
@@ -253,27 +253,9 @@
   },
   {
     "provider": "doubao",
-    "model": "Doubao-lite-128k",
-    "input": 0.0008,
-    "output": 0.001,
-    "unit": "K",
-    "currency":"CNY",
-    "url": "https://www.volcengine.com/product/doubao"
-  },
-  {
-    "provider": "doubao",
-    "model": "Doubao-pro-32k",
+    "model": "doubao-pro-32k",
     "input": 0.0008,
     "output": 0.002,
-    "unit": "K",
-    "currency":"CNY",
-    "url": "https://www.volcengine.com/product/doubao"
-  },
-  {
-    "provider": "doubao",
-    "model": "Doubao-pro-128k",
-    "input": 0.005,
-    "output": 0.009,
     "unit": "K",
     "currency":"CNY",
     "url": "https://www.volcengine.com/product/doubao"
