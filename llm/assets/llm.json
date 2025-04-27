@@ -5,7 +5,7 @@
     "input": 0.15,
     "output": 0.6,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://openai.com/api/pricing/"
   },
   {
@@ -14,7 +14,7 @@
     "input": 2.5,
     "output": 10,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://openai.com/api/pricing/"
   },
   {
@@ -23,7 +23,7 @@
     "input": 15,
     "output": 60,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://openai.com/api/pricing/"
   },
   {
@@ -32,16 +32,16 @@
     "input": 1.1,
     "output": 4.4,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://openai.com/api/pricing/"
   },
   {
     "provider": "bedrock",
     "model": "opus",
-    "input": 	0.015,
+    "input": 0.015,
     "output": 0.075,
     "unit": "K",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://aws.amazon.com/cn/bedrock/pricing/"
   },
   {
@@ -50,7 +50,7 @@
     "input": 0.003,
     "output": 0.015,
     "unit": "K",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://aws.amazon.com/cn/bedrock/pricing/"
   },
   {
@@ -59,26 +59,44 @@
     "input": 0.003,
     "output": 0.015,
     "unit": "K",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://aws.amazon.com/cn/bedrock/pricing/"
   },
   {
     "provider": "bedrock",
     "model": "anthropic.claude-3-haiku-20240307-v1:0",
-    "input": 	0.00025,
+    "input": 0.00025,
     "output": 0.00125,
     "unit": "K",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://aws.amazon.com/cn/bedrock/pricing/"
   },
   {
     "provider": "bedrock",
     "model": "anthropic.claude-3-5-haiku-20241022-v1:0",
-    "input": 	0.0008,
+    "input": 0.0008,
     "output": 0.004,
     "unit": "K",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://aws.amazon.com/cn/bedrock/pricing/"
+  },
+  {
+    "provider": "vertex-ai",
+    "model": "gemini-2.5-flash",
+    "input": 0.15,
+    "output": 0.6,
+    "unit": "M",
+    "currency": "USD",
+    "url": "https://ai.google.dev/pricing"
+  },
+  {
+    "provider": "vertex-ai",
+    "model": "gemini-2.5-pro",
+    "input": 1.25,
+    "output": 10,
+    "unit": "M",
+    "currency": "USD",
+    "url": "https://ai.google.dev/pricing"
   },
   {
     "provider": "vertex-ai",
@@ -86,7 +104,7 @@
     "input": 0.1,
     "output": 0.4,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://ai.google.dev/pricing"
   },
   {
@@ -95,7 +113,7 @@
     "input": 0.075,
     "output": 0.3,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://ai.google.dev/pricing"
   },
   {
@@ -104,7 +122,7 @@
     "input": 0.075,
     "output": 0.3,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://ai.google.dev/pricing"
   },
   {
@@ -113,7 +131,7 @@
     "input": 1.25,
     "output": 5,
     "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://ai.google.dev/pricing"
   },
   {
@@ -122,7 +140,7 @@
     "input": 0.0024,
     "output": 0.0096,
     "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
   },
   {
@@ -131,7 +149,7 @@
     "input": 0.0008,
     "output": 0.002,
     "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
   },
   {
@@ -140,61 +158,52 @@
     "input": 0.0003,
     "output": 0.0006,
     "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
   },
   {
     "provider": "qwen",
     "model": "qwen-vl-max",
-    "input": 0.02,
-    "output": 0.02,
+    "input": 0.003,
+    "output": 0.009,
     "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
   },
   {
     "provider": "qwen",
     "model": "qwen-vl-plus",
-    "input": 0.008,
-    "output": 0.008,
+    "input": 0.0015,
+    "output": 0.0045,
     "unit": "K",
-    "currency":"CNY",
-    "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
-  },
-  {
-    "provider": "qwen",
-    "model": "qwen-coder-plus",
-    "input": 0.0035,
-    "output": 0.007,
-    "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://help.aliyun.com/zh/model-studio/getting-started/models"
   },
   {
     "provider": "zhipu",
     "model": "glm-4-plus",
-    "input": 0.05,
-    "output": 0.05,
-    "unit": "K",
-    "currency":"CNY",
+    "input": 5,
+    "output": 5,
+    "unit": "M",
+    "currency": "CNY",
     "url": "https://open.bigmodel.cn/pricing"
   },
   {
     "provider": "zhipu",
     "model": "glm-4-air",
-    "input": 0.001,
-    "output": 0.001,
-    "unit": "K",
-    "currency":"CNY",
+    "input": 0.5,
+    "output": 0.5,
+    "unit": "M",
+    "currency": "CNY",
     "url": "https://open.bigmodel.cn/pricing"
   },
   {
     "provider": "zhipu",
     "model": "glm-4-flashx",
-    "input": 0.0001,
-    "output": 0.0001,
-    "unit": "K",
-    "currency":"CNY",
+    "input": 0.1,
+    "output": 0.1,
+    "unit": "M",
+    "currency": "CNY",
     "url": "https://open.bigmodel.cn/pricing"
   },
   {
@@ -203,7 +212,16 @@
     "input": 2,
     "output": 8,
     "unit": "M",
-    "currency":"CNY",
+    "currency": "CNY",
+    "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+  },
+  {
+    "provider": "deepseek",
+    "model": "deepseek-reasoner",
+    "input": 4,
+    "output": 16,
+    "unit": "M",
+    "currency": "CNY",
     "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
   },
   {
@@ -212,7 +230,7 @@
     "input": 0.99,
     "output": 0.99,
     "unit": "M",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://platform.lingyiwanwu.com/docs#%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%AE%A1%E8%B4%B9"
   },
   {
@@ -221,7 +239,7 @@
     "input": 20,
     "output": 20,
     "unit": "M",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://platform.lingyiwanwu.com/docs#%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%AE%A1%E8%B4%B9"
   },
   {
@@ -230,7 +248,7 @@
     "input": 2.5,
     "output": 2.5,
     "unit": "M",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://platform.lingyiwanwu.com/docs#%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%AE%A1%E8%B4%B9"
   },
   {
@@ -239,90 +257,79 @@
     "input": 6,
     "output": 6,
     "unit": "M",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://platform.lingyiwanwu.com/docs#%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%AE%A1%E8%B4%B9"
   },
   {
     "provider": "doubao",
-    "model": "doubao-lite-32k",
+    "model": "doubao-1.5-lite-32k",
     "input": 0.0003,
     "output": 0.0006,
     "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
     "url": "https://www.volcengine.com/product/doubao"
   },
   {
     "provider": "doubao",
-    "model": "doubao-pro-32k",
+    "model": "Doubao-1.5-pro-32k",
     "input": 0.0008,
     "output": 0.002,
     "unit": "K",
-    "currency":"CNY",
+    "currency": "CNY",
+    "url": "https://www.volcengine.com/product/doubao"
+  },
+  {
+    "provider": "doubao",
+    "model": "Doubao-1.5-vision-pro",
+    "input": 0.003,
+    "output": 0.009,
+    "unit": "K",
+    "currency": "CNY",
+    "url": "https://www.volcengine.com/product/doubao"
+  },
+  {
+    "provider": "doubao",
+    "model": "Doubao-1.5-vision-lite",
+    "input": 0.0015,
+    "output": 0.0045,
+    "unit": "K",
+    "currency": "CNY",
     "url": "https://www.volcengine.com/product/doubao"
   },
   {
     "provider": "baidu",
-    "model": "ERNIE-4.0-Turbo-128K",
-    "input": 0.12,
-    "output": 0.24,
-    "unit": "K",
-    "currency":"CNY",
-    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
-  },
-  {
-    "provider": "baidu",
-    "model": "ERNIE-4.0-Turbo-8K",
-    "input": 0.02,
-    "output": 0.06,
-    "unit": "K",
-    "currency":"CNY",
-    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
-  },
-  {
-    "provider": "baidu",
-    "model": "ERNIE-4.0-8K",
-    "input": 0.03,
-    "output": 0.09,
-    "unit": "K",
-    "currency":"CNY",
-    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
-  },
-  {
-    "provider": "baidu",
-    "model": "ERNIE-3.5-128K",
+    "model": "ERNIE-4.5-Turbo",
     "input": 0.0008,
-    "output": 0.002,
+    "output": 0.0032,
     "unit": "K",
-    "currency":"CNY",
-    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
+    "currency": "CNY",
+    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Qm9cw2s7m"
   },
   {
     "provider": "baidu",
-    "model": "ERNIE-Speed-Pro-128K",
-    "input": 0.0003,
-    "output": 0.0006,
+    "model": "ERNIE-4.5-Turbo-VL",
+    "input": 0.003,
+    "output": 0.009,
     "unit": "K",
-    "currency":"CNY",
-    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
+    "currency": "CNY",
+    "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Qm9cw2s7m"
   },
   {
     "provider": "xai",
-    "model": "grok-beta",
-    "input": 5,
+    "model": "grok-3-mini",
+    "input": 0.6,
+    "output": 4,
+    "unit": "M",
+    "currency": "USD",
+    "url": "https://console.x.ai/"
+  },
+  {
+    "provider": "xai",
+    "model": "grok-3",
+    "input": 3,
     "output": 15,
     "unit": "M",
-    "currency":"USD",
-    "url": "https://console.x.ai/"
-  },
-  {
-    "provider": "xai",
-    "model": "grok-2",
-    "input": 2,
-    "output": 10,
-    "unit": "M",
-    "currency":"USD",
+    "currency": "USD",
     "url": "https://console.x.ai/"
   }
-  
-  
 ]
