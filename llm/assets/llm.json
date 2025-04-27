@@ -1,12 +1,30 @@
 [
   {
     "provider": "openai",
+    "model": "gpt-4.1",
+    "input": 2,
+    "output": 8,
+    "unit": "M",
+    "currency": "USD",
+    "url": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "input": 0.4,
+    "output": 1.6,
+    "unit": "M",
+    "currency": "USD",
+    "url": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "provider": "openai",
     "model": "gpt-4o-mini",
     "input": 0.15,
     "output": 0.6,
     "unit": "M",
     "currency": "USD",
-    "url": "https://openai.com/api/pricing/"
+    "url": "https://platform.openai.com/docs/pricing"
   },
   {
     "provider": "openai",
@@ -15,16 +33,16 @@
     "output": 10,
     "unit": "M",
     "currency": "USD",
-    "url": "https://openai.com/api/pricing/"
+    "url": "https://platform.openai.com/docs/pricing"
   },
   {
     "provider": "openai",
-    "model": "o1",
-    "input": 15,
-    "output": 60,
+    "model": "o3",
+    "input": 10,
+    "output": 40,
     "unit": "M",
     "currency": "USD",
-    "url": "https://openai.com/api/pricing/"
+    "url": "https://platform.openai.com/docs/pricing"
   },
   {
     "provider": "openai",
@@ -33,7 +51,7 @@
     "output": 4.4,
     "unit": "M",
     "currency": "USD",
-    "url": "https://openai.com/api/pricing/"
+    "url": "https://platform.openai.com/docs/pricing"
   },
   {
     "provider": "bedrock",
